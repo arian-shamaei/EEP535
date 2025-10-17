@@ -1,0 +1,21 @@
+﻿# Quartus/Intel FPGA build outputs
+# Ignore these anywhere in the tree
+.db/
+db/
+incremental_db/
+output_files/
+simulation/
+*.rpt
+*.summary
+*.log
+*.smsg
+*.qar
+*.qdf
+# Temp/backup
+~$*
+*.bak
+*.tmp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
