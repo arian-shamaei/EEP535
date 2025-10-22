@@ -1,21 +1,53 @@
-﻿# Quartus/Intel FPGA build outputs
-# Ignore these anywhere in the tree
+﻿# Quartus build artifacts
 .db/
 db/
 incremental_db/
 output_files/
-simulation/
 *.rpt
-*.summary
-*.log
 *.smsg
-*.qar
-*.qdf
-# Temp/backup
-~$*
+*.srf
+*.qws
 *.bak
-*.tmp
-*.swp
-*.swo
+*.cmp
+
+# ModelSim/Questa artifacts
+work/
+transcript
+vsim.wlf
+*.wlf
+wlft*
+*.mti
+*.log
+modelsim.ini
+
+# IP/Qsys generated temp
+.qsys_edit/
+*.qdb
+*.qpg
+*.qtl
+*.jdi
+
+# Bitstreams and programmer outputs
+*.sof
+*.pof
+*.jic
+*.sopcinfo
+
+# Misc generated
+c5_pin_model_dump.txt
+*.qip
+*.qdf
+
+# OS/Editor
 .DS_Store
 Thumbs.db
+*.swp
+*.user# Simulation outputs
+simulation/**/work/
+simulation/**/vsim.wlf
+simulation/**/transcript
+simulation/**/*.svo
+simulation/**/*.sft
+# Generic generated extensions
+*.svo
+*.sft
